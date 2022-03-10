@@ -15,7 +15,12 @@ then
 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/tower/main/misery'))()
 
+elseif game.PlaceId == 7728848215
 
+then
+
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Slashing/main/Simulator'))()
 end
 
 
