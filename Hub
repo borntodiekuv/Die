@@ -21,6 +21,13 @@ then
 
 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Slashing/main/Simulator'))()
-end
 
+elseif game.PlaceId == 8232438881
+
+then
+
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Thief/main/Simulator'))()
+
+end
 
