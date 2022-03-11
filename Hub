@@ -29,5 +29,13 @@ then
 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Thief/main/Simulator'))()
 
-end
+elseif game.PlaceId == 3956818381
 
+then
+
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Ninja/main/Legends'))()
+
+
+
+end
