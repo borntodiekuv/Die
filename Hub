@@ -36,12 +36,19 @@ then
 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Ninja/main/Legends'))()
 
-elseif game.PlaceId == 7211666966
+elseif game.PlaceId == 3956818381
 
 then
 
 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/tower/main/jump'))()
+
+elseif game.PlaceId == 3956818381
+
+then
+
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/borntodiekuv/Dungeon/main/Quest'))()
 
 end
 
