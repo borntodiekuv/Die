@@ -1,0 +1,87 @@
+for i,v in next, game.CoreGui:GetChildren() do
+    if v.Name == "ScreenGui" and v.ImageButton then
+        v:Destroy()
+    end
+end
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/Ui-Libraries/main/uwuware", true))()
+
+local Window = Library:CreateWindow"Deepwoken Battle Arena"
+
+
+
+local list = {
+    "Select",
+    "Sharko",
+
+
+}
+
+Window:AddList({text = "Pick Character", flag = "list", values = list, callback = function(sex)
+getgenv().nocd = sex
+end})
+
+
+
+Window:AddToggle({text = "E", flag = "toggle", state = false, callback = function(a)
+aa = a
+while aa do task.wait(1)
+    if nocd == "Sharko" then
+        
+        local args = {
+            [1] = game:GetService("Players").LocalPlayer
+        }
+
+        game:GetService("ReplicatedStorage").Sharko.SharkoLeftRemote:FireServer(unpack(args))
+
+    end
+    end
+end})
+
+
+Window:AddToggle({text = "R", flag = "toggle", state = false, callback = function(a)
+    aa = a
+    while aa do task.wait(1)
+        if nocd == "Sharko" then 
+            
+
+            local args = {
+                [1] = game:GetService("Players").LocalPlayer
+            }
+            
+            game:GetService("ReplicatedStorage").Sharko.SharkoRightRemote:FireServer(unpack(args))
+
+        end
+        end
+    end})
+
+    Window:AddToggle({text = "T", flag = "toggle", state = false, callback = function(a)
+        aa = a
+        while aa do task.wait(1)
+            if nocd == "Sharko" then 
+                
+                local args = {
+                    [1] = game:GetService("Players").LocalPlayer
+                }
+
+                game:GetService("ReplicatedStorage").Sharko.SharkoKickRemote:FireServer(unpack(args))
+            end
+            end
+        end})
+
+        Window:AddToggle({text = "Y", flag = "toggle", state = false, callback = function(a)
+            aa = a
+            while aa do task.wait(1)
+                if nocd == "Sharko" then 
+                    local args = {
+                        [1] = game:GetService("Players").LocalPlayer
+                    }
+                    
+                    game:GetService("ReplicatedStorage").Sharko.SharkoShotsRemote:FireServer(unpack(args))
+                end
+                end
+            end})
+
+
+            Library:Init()
+
