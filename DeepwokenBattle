@@ -83,7 +83,7 @@ Window:AddToggle({text = "R", flag = "toggle", state = false, callback = functio
             end})
            
            
-            Window:AddButton({text = "Name", flag = "button", callback = function()
+            Window:AddButton({text = "Auto Collect Souls", flag = "button", callback = function()
                     for i,v in pairs(game:GetService("Workspace").Souls:GetDescendants()) do
                             if v:IsA("TouchTransmitter") then
                             firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0)
